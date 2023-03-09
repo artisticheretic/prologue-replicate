@@ -1,0 +1,461 @@
+/* CSS Reset  */
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar  */
+
+#menu{
+    /* position: sticky; */
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    background-color: #242429;
+    height: 460vh;
+    width: 21%;
+    /* flex-direction: column; */
+    align-items: center;
+    color: white;
+    z-index: 20;
+}
+
+#menu .stick{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #242429;
+}
+
+/* Sidebar Top  */
+
+#menu .picture{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 88%;
+}
+.picture img{
+    padding: 2em;
+    padding-left: 0.9em;
+}
+.picture .topname{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2em 1em;
+    padding-right: 1em;
+}
+.picture .topname .name{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.picture .topname .designation{
+    font-size: 0.7em;
+    font-weight: lighter;
+    color: #e9ebeb;
+}
+
+/* Sidebar List  */
+
+#menu .listing{
+    width: 100%;
+}
+/* .listing .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 14vw;
+    color: white;
+    text-decoration: none;
+} */
+.listing .navbar .lists{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-weight: lighter;
+}
+.listing .navbar .lists a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #242429;
+}
+.listing .navbar .lists a:active{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #131315;
+    box-shadow: 1px 0.2px 15px -4px #000000 inset;
+}
+.listing .navbar .lists a:hover{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #131315;
+    box-shadow: 1px 0.2px 15px -4px #000000 inset;
+    transition: 0.2s ease-out;
+}
+.listing .navbar .lists a .icon{
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 2em;
+    filter:invert(35%) sepia(20%) saturate(0%) hue-rotate(-50deg) brightness(85%) contrast(80%);
+}
+.listing .navbar .lists a:active .icon{
+    filter:invert(63%) sepia(53%) saturate(5000%) hue-rotate(-50deg) brightness(96%) contrast(80%);
+}
+.listing .navbar .lists a:hover .icon{
+    filter:invert(63%) sepia(53%) saturate(5000%) hue-rotate(-50deg) brightness(96%) contrast(80%);
+    transition: 0.15s ease-out;
+}
+.listing .navbar .lists a .item{
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 2em;
+    justify-content: flex-end;
+}
+.listing .navbar .lists a .icon img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* Sidebar Socials  */
+
+.socials{
+    display: flex;
+}
+.socials a{
+    color: white;
+    text-decoration: none;
+    margin: 0 0.7em;
+    margin-top: 24.2em;
+}
+.socials a img{
+    height: 1.3em;
+    width: 1.3em;
+    filter:invert(35%) sepia(20%) saturate(0%) hue-rotate(-50deg) brightness(85%) contrast(80%)
+}
+.socials a:hover img{
+    filter:invert(135%) sepia(20%) saturate(0%) hue-rotate(-50deg) brightness(125%) contrast(80%);
+    transition: 0.2s ease-in-out;
+}
+
+/* Top Intro Section */
+
+#top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 6em;
+    z-index: 2;
+}
+#top::before{
+    content: "";
+    position: inherit;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://picsum.photos/1200/600/?blur=9);
+    z-index: -1;
+}
+#top .big{
+    padding: 1.9em 0em;
+    margin: 0em 9em;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+#top .big h2{
+    color: #e8edec;
+    margin: 1em 0.3em;
+    font-weight: lighter;
+}
+#top .big p{
+    color: #e8edec;
+    margin: 0 5em;
+    font-size: 0.8em;
+    margin-top: 1.5em;
+    font-weight: lighter;
+}
+#top .big h2 a{
+    text-decoration: none;
+    color: white;
+}
+#top .btn{
+    padding: 2em 4em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #80a8a6;
+    color: white;
+}
+#top .btn:hover{
+    padding: 2em 4em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #8eb9b6;
+    color: white;
+    transition: 0.4s ease-out;
+}
+#top .btn span{
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+/* Portfolio Section  */
+
+#portfolio{
+    position: absolute;
+    top: 34.5em;
+    right: 0;
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 4em;
+    background-color: #e0e3e1;
+    z-index: 7;
+    box-shadow: 0em 0.5em 0.9em -1em black;
+}
+#portfolio .porttop{
+    color: #525252;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#portfolio .porttop h1{
+    padding: 0.5em 0;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+#portfolio .porttop p{
+    padding: 1em 0em;
+    font-weight: 200;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0em 5.5em;
+}
+#portfolio .portimages{
+    display: flex;
+    width: 72vw;
+    /* flex-flow: column wrap; */
+    align-items: center;
+    padding-top: 2em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#portfolio .portimages .imgtxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eff4f3;
+    padding-bottom: 1em;
+}
+#portfolio .portimages .imgtxt span{
+    padding-top: 0.8em;
+    color: #525252;
+}
+
+/* About Me Secton  */
+
+#aboutme{
+    position: absolute;
+    top: 100em;
+    right: 0;
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    background-color: #eff4f3;
+    z-index: 6;
+    box-shadow: 0em 0.5em 0.9em -1em black;
+
+}
+#aboutme h1{
+    color: #525252;
+    padding: 0.5em 0;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+#aboutme img{
+    padding: 2.5em 0;
+}
+#aboutme p{
+    color: #525252;
+    padding: 1em 0em;
+    font-weight: 200;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0em 5.5em;
+}
+
+/* Contact Section  */
+
+#contact{
+    position: absolute;
+    top: 153.5em;
+    right: 0;
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 4em;
+    background-color: #e8edec;
+    box-shadow: 0em 0.5em 0.9em -1em black;
+    z-index: 5;
+}
+#contact h1{
+    color: #525252;
+    padding: 0.5em 0;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+#contact p{
+    color: #525252;
+    padding: 1em 0em;
+    font-weight: 200;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0em 5.5em;
+}
+#contact form{
+    color: #525252;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 2em;
+}
+#contact form input{
+    border-color: #7c8d95;
+    color: #525252;
+}
+#contact form #name{
+    border-radius: 0.3em;
+    width: 48%;
+    height: 10vh;
+    font-size: 1.3em;
+    padding: 0em 0.8em; 
+}
+#contact form #email{
+    border-radius: 0.3em;
+    width: 48%;
+    height: 10vh;
+    font-size: 1.3em;
+    padding: 0em 0.8em;
+}
+#contact form #message{
+    border-radius: 0.3em;
+    width: 100%;
+    height: 10vh;
+    font-size: 1.3em;
+    padding: 7em 0.8em;
+}
+#contact .lstbtn{
+    padding: 2em 4em;
+    margin: 4em 0em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #80a8a6;
+    color: white;
+}
+#contact .lstbtn:hover{
+    padding: 2em 4em;
+    margin: 4em 0em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #8eb9b6;
+    color: white;
+    transition: 0.4s ease-out;
+}
+#contact .lstbtn span{
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+/* Footer  */
+
+#footer{
+    position: absolute;
+    top: 210em;
+    right: 0;
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: #e9eded;
+    z-index: 4;
+}
+#footer p{
+    padding: 5em 6em;
+    font-weight: 200;
+    font-size: 0.9em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    word-spacing: 0.2em;
+}
+#footer p a{
+    text-decoration: none;
+    color: black;
+}
+#footer p a:hover{
+    color: #e17689;
+    transition: 0.3s ease-out;
+}
